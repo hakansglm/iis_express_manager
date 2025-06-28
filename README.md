@@ -1,5 +1,10 @@
 # IIS Express Proje Yöneticisi
 
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/hakansglm/iis_express_manager)
+[![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)](https://github.com/hakansglm/iis_express_manager)
+[![Electron](https://img.shields.io/badge/Electron-37.1.0-green.svg)](https://electronjs.org/)
+[![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)Express Proje Yöneticisi
+
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/hakansglm/iis-express-manager)
 [![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)](https://github.com/hakansglm/iis-express-manager)
 [![Electron](https://img.shields.io/badge/Electron-37.1.0-green.svg)](https://electronjs.org/)

@@ -23,11 +23,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hakansglm/iis-express-manager.git"
+    "url": "https://github.com/hakansglm/iis_express_manager.git"
   },
-  "homepage": "https://github.com/hakansglm/iis-express-manager#readme",
+  "homepage": "https://github.com/hakansglm/iis_express_manager#readme",
   "bugs": {
-    "url": "https://github.com/hakansglm/iis-express-manager/issues"
+    "url": "https://github.com/hakansglm/iis_express_manager/issues"
   },
   "engines": {
     "node": ">=14.0.0"
