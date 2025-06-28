@@ -8,8 +8,8 @@ const { promisify } = require('util');
 
 const execAsync = promisify(exec);
 
-// Ayarlar dosyası yolu
-const settingsPath = path.join(__dirname, 'settings.json');
+// Ayarlar dosyası yolu (her zaman yazılabilir bir dizin)
+const settingsPath = path.join(app.getPath('userData'), 'settings.json');
 
 // Varsayılan ayarlar
 const defaultSettings = {
@@ -227,24 +227,26 @@ ipcMain.handle('get-projects', async () => {
 // Klasör seçme dialogu
 ipcMain.handle('select-projects-directory', async () => {
   try {
-    const result = await dialog.showOpenDialog({
+    const settings = loadSettings();
+    const dialogOptions = {
       title: 'Proje Klasörünü Seçin',
-      defaultPath: loadSettings().projectsDirectory,
       properties: ['openDirectory']
-    });
-    
+    };
+    // Sadece geçerli ve boş olmayan bir string ise defaultPath ekle
+    if (typeof settings.projectsDirectory === 'string' && settings.projectsDirectory.trim() !== '') {
+      dialogOptions.defaultPath = settings.projectsDirectory;
+    }
+    const result = await dialog.showOpenDialog(dialogOptions);
     if (!result.canceled && result.filePaths.length > 0) {
       const selectedPath = result.filePaths[0];
       const settings = loadSettings();
       settings.projectsDirectory = selectedPath;
-      
       if (saveSettings(settings)) {
         return { success: true, path: selectedPath };
       } else {
         return { success: false, error: 'Ayarlar kaydedilemedi' };
       }
     }
-    
     return { success: false, error: 'Klasör seçilmedi' };
   } catch (error) {
     return { success: false, error: error.message };

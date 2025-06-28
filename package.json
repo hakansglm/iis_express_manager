@@ -63,8 +63,12 @@
     },
     "nsis": {
       "oneClick": false,
-      "allowToChangeInstallationDirectory": true
-    }
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    },
+    "compression": "maximum",
+    "electronLanguages": ["en"],
+    "buildDependenciesFromSource": false
   },
   "dependencies": {},
   "devDependencies": {
