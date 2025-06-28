@@ -4,7 +4,13 @@ Bu proje [Semantic Versioning](https://semver.org/spec/v2.0.0.html) standardın�
 
 ## [1.0.0] - 2025-06-28
 
-### 🎉 İlk Stabil Sürüm
+### 🎉 İlk Stabil Sürüm - GitHub Release
+
+#### 📦 Release Bilgileri
+- **Windows Binary**: IIS-Express-Manager-v1.0.0-win-x64.zip (117.98 MB)
+- **Platform**: Windows 10/11 (x64)
+- **Electron Version**: 37.1.0
+- **Kurulum**: Portable ZIP dosyası
 
 #### ✨ Yeni Özellikler
 - **IIS Express Yönetimi**: Projeleri tek tıkla başlatma/durdurma
