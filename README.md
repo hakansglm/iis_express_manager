@@ -5,7 +5,7 @@
 [![Electron](https://img.shields.io/badge/Electron-37.1.0-green.svg)](https://electronjs.org/)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 
-Modern ve kullanıcı dostu bir IIS Express proje yönetim aracı. Electron.js ile geliştirilmiş, Windows için optimize edilmiş bir masaüstü uygulamasıdır.
+**IIS Express Proje Yöneticisi**, Windows üzerinde IIS Express ile çalışan web projelerini kolayca yönetmenizi sağlayan modern ve kullanıcı dostu bir masaüstü uygulamasıdır. Proje dizinlerinizi seçin, projelerinizi tek tıkla başlatın veya durdurun, port çakışmalarını otomatik yönetin ve tüm projelerinizi şık bir grid arayüzde takip edin. Ayarlarınız ve tercihleriniz otomatik olarak kaydedilir, uygulama hem geliştirme hem de EXE olarak paketlenmiş şekilde sorunsuz çalışır. Kapsamlı hata yönetimi, port algoritması, anlık durum takibi ve yardım sistemiyle, IIS Express tabanlı geliştirme süreçlerinizi çok daha hızlı ve verimli hale getirir.
 
 ![Screenshot](screenshots/iis_express_manager_screenshot.jpg)
 
