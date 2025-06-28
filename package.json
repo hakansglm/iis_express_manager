@@ -6,7 +6,9 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
-    "dist": "npm run build"
+    "dist": "npm run build",
+    "pack": "electron-builder --dir",
+    "dist-win": "electron-builder --win"
   },
   "keywords": [
     "iis-express",
@@ -32,9 +34,44 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {
-    "electron": "^37.1.0"
+  "build": {
+    "appId": "com.hakansglm.iis-express-manager",
+    "productName": "IIS Express Manager",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "renderer.js",
+      "index.html",
+      "style.css",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "forceCodeSigning": false,
+      "verifyUpdateCodeSignature": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   },
-  "devDependencies": {},
-  "os": ["win32"]
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "os": [
+    "win32"
+  ]
 }
