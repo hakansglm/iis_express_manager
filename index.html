@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>IIS Express Proje Yöneticisi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="settings-bar">
+    <div class="projects-path">
+      <span id="currentPath">Henüz klasör seçilmedi</span>
+      <button id="changePathBtn" class="change-path" title="Proje klasörünü değiştir">Klasör Seç</button>
+    </div>
+  </div>
+  
+  <div class="top-controls">
+    <button id="refreshBtn" class="refresh" title="Proje listesini yenile">🔄 Yenile</button>
+    <button id="stopAllBtn" class="stop-all" title="Tüm çalışan projeleri durdur">⏹️ Tümünü Durdur</button>
+    <div class="help-tooltip">
+      <span class="help-icon" title="Yardım">❓</span>
+      <div class="tooltip-content">
+        <h4>Nasıl Kullanılır?</h4>
+        <ul>
+          <li><strong>Başlat:</strong> Projeyi IIS Express ile çalıştırır</li>
+          <li><strong>Durdur:</strong> Çalışan projeyi durdurur</li>
+          <li><strong>Aç:</strong> Projeyi tarayıcıda açar</li>
+          <li><strong>ASP:</strong> Classic ASP projeleri için özel işaretleme</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="filter-bar">
+    <input type="text" id="filterInput" placeholder="Proje adı ile filtrele..." title="Proje adı yazarak filtreleme yapabilirsiniz" />
+  </div>
+  
+  <h2>IIS Express Projeleri</h2>
+  <div id="projectList" class="projects-grid"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>

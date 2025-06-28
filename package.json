@@ -1,0 +1,40 @@
+{
+  "name": "iis-express-manager",
+  "version": "1.0.0",
+  "description": "Modern ve kullanıcı dostu IIS Express proje yönetim aracı. Electron.js ile geliştirilmiş Windows masaüstü uygulaması.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "npm run build"
+  },
+  "keywords": [
+    "iis-express",
+    "project-manager",
+    "electron",
+    "windows",
+    "web-development",
+    "local-server"
+  ],
+  "author": {
+    "name": "hakansglm",
+    "email": "hakansaglam@sabahweb.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hakansglm/iis-express-manager.git"
+  },
+  "homepage": "https://github.com/hakansglm/iis-express-manager#readme",
+  "bugs": {
+    "url": "https://github.com/hakansglm/iis-express-manager/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "electron": "^37.1.0"
+  },
+  "devDependencies": {},
+  "os": ["win32"]
+}
