@@ -7,7 +7,7 @@
 
 Modern ve kullanıcı dostu bir IIS Express proje yönetim aracı. Electron.js ile geliştirilmiş, Windows için optimize edilmiş bir masaüstü uygulamasıdır.
 
-![Screenshot](docs/screenshot.png)
+![Screenshot](screenshots/iis_express_manager_screenshot.jpg)
 
 ## 🚀 Özellikler
 
@@ -100,6 +100,6 @@ Bu proje MIT lisansı ile sunulmaktadır.
 
 ---
 
-**Geliştirici**: hakansglm  
+**Geliştirici**: Hakan Murat SAĞLAM  
 **Versiyon**: 1.0.0  
 **Son Güncelleme**: 2025-06-29
